@@ -28,6 +28,15 @@ header h1 {
   margin-bottom: 10px;
 }
 
+#message {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -72,6 +81,59 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.participants-header {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.participants-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  color: #666;
+}
+
+.participants-list li {
+  margin-bottom: 5px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.participant-email {
+  flex: 1;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px 8px;
+  margin-left: 10px;
+  transition: transform 0.2s;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+  background: none;
+}
+
+.no-participants {
+  color: #999;
+  font-style: italic;
+  margin: 0;
 }
 
 .form-group {
